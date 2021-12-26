@@ -63,5 +63,13 @@ The steps to deploy the application was similar as in "# Steps to build the appl
  # Any details/changes you performed to the provided source code.
  All the errors/changes were screenshot on a word document within this git repo.
  
+ error 1 : wrong network name
+ error 2 : need to move dockerfile into app folder
+ error 3 : \ was missing before ZIP
+ error 4 : wrong instruction "DO"
+ error 5 : mispell "nginx"
+ error 6 : user www instead of www2
+ error 7 : port 80:80
+ 
 
  
