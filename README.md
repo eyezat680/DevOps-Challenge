@@ -40,22 +40,25 @@ Below are the steps to setup the AWS infra in which i used Linux(ubuntu)
 
 # Steps to deploy the application
 Once server provisioned, work was being done through xShell by SSH
+
 Create an admin/root account for self >> useradd -m -d /home/ahmed -s /bin/bash -c "Owner" ahmed
+
 The steps to deploy the application was similar as in "# Steps to build the application image and run the application in local environment."
- 1  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
- 2  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
- 3  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+
+ 1. sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+ 2. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+ 3. echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
- 4  sudo apt-get update
- 5  apt-get install docker-ce docker-ce-cli containerd.io
- 6  docker version
- 7  apt install docker-compose
- 8  git clone https://github.com/iPriceGroup/DevOps-Challenge.git
- Build the application > docker-compose -f docker-compose.yml up --build -d
- Rectify all the issue with the code
- Until the final step, ensure port 80 is opened > netstat -tulpn | grep 80
- Test by going to the url http://18.142.90.1/
- 
+ 4. sudo apt-get update
+ 5. apt-get install docker-ce docker-ce-cli containerd.io
+ 6. docker version
+ 7. apt install docker-compose
+ 8. git clone https://github.com/iPriceGroup/DevOps-Challenge.git
+ 9. Build the application > docker-compose -f docker-compose.yml up --build -d
+ 10.Rectify all the issue with the code
+ 11. Until the final step, ensure port 80 is opened > netstat -tulpn | grep 80
+ 12. Test by going to the url http://18.142.90.1/
+
  
  # Any details/changes you performed to the provided source code.
  All the errors/changes were screenshot on a word document within this git repo.
