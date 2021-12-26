@@ -56,6 +56,7 @@ The steps to deploy the application was similar as in "# Steps to build the appl
  Until the final step, ensure port 80 is opened > netstat -tulpn | grep 80
  Test by going to the url http://18.142.90.1/
  
+ 
  # Any details/changes you performed to the provided source code.
  All the errors/changes were screenshot on a word document within this git repo.
  
