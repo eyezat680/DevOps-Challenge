@@ -50,8 +50,8 @@ The steps to deploy the application was similar as in "# Steps to build the appl
  6. docker version
  7. apt install docker-compose
  8. git clone https://github.com/iPriceGroup/DevOps-Challenge.git
- 9. Build the application > docker-compose -f docker-compose.yml up --build -d
- 10.Rectify all the issue with the code
+ 9. Build the application > docker-compose -f docker-compose.yml up --build -d  </br>
+ 10.Rectify all the issue with the code </br>
  11. Until the final step, ensure port 80 is opened > netstat -tulpn | grep 80
  12. Test by going to the url http://18.142.90.1/
 
