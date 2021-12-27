@@ -11,19 +11,15 @@ For more information about working for iPrice, please view our Careers page: htt
 # DevOps-Challenge
 
 # Steps to build the application image and run the application in local environment.
-1.  WSL2 + Docker Desktop, git, wget, curl, Xshell
-2.  From shell, run below:- 
-3.    apt update && apt install -y gnupg software-properties-common curl
-4.    curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add - 
-5.    curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add - 
-6.    apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-7.    apt update && apt install terraform
-8.    terraform -install-autocomplete
-9.  GitClone using HTTPS method
-10. Move to DevOps-Challenge path and ran below command.
-11.   docker-compose -f docker-compose.yml up --build -d
-12. Multiple issues were identified with the code (will be explained separately)
-13. Once all issues were fixed, checked on the website locally by opening a browser and run localhost:80
+1.  AWS VM (linux) || xShell installed locally
+2.  Once VM provisioned, SSH to the VM
+3.  Install update (sudo apt get update)
+4.  Install docker (apt-get install docker-ce docker-ce-cli containerd.io & apt install docker-compose) </br>
+5.  GitClone using HTTPS method </br>
+6. Move to DevOps-Challenge path and ran below command. </br>
+7. Attempt to build image - docker-compose -f docker-compose.yml up --build -d </br>
+8. Multiple issues were identified with the code (will be explained separately) </br>
+9. Once all issues were fixed, checked on the website locally by opening a browser and run localhost:80 </br>
 
 # Steps to provision the infrastructure
 Below are the steps to setup the AWS infra in which i used Linux(ubuntu)
